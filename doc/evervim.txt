@@ -20,25 +20,27 @@ Changelog		|evervim-changelog|
 ==============================================================================
 INTRODUCTION					*evervim-introduction*
 
-*evervim* (or *evervim.vim* ) is plugin for edit evernote(http://www.evernote.com)
-on vim. This plugin can edit evernote by markdown or law XML.
+*evervim* (or *evervim.vim* ) is a plugin for editing / creating 
+evernote notes (http://www.evernote.com) on vim. 
+This plugin can edit evernotes' by markdown or law XML.
 See |:g:evervim_usemarkdown| .
 
 ==============================================================================
 REQUIRES					*evervim-requires*
 
-Python and vim with compiled +python and "markdown" package for python.
-Check Python is enable or not,
+Python and vim with a compiled +python and "markdown" package for python.
+Check to see if Python is enabled or not,
 >
 	:echo has('python')
 <
-When display '1', then python is enable.
-check "markdown" package is installed,
+If Vim returns '1', then python is enabled.
+Check to see if the "markdown" package is installed,
 >
 	:python import markdown
 <
-When no error occured, markdown is already installed.
-How to install markdown, see below url.
+If no error occurs, then markdown is already installed.
+
+For instructions for installing markdown, see the url below.
 http://packages.python.org/Markdown/install.html
 
 ==============================================================================
@@ -47,7 +49,7 @@ INSTALL						*evervim-install*
 Install files into Vim script directory.
 
 Get "Developer Tokens" from Evernote Web(https://www.evernote.com/api/DeveloperToken.action)
-and set g:evervim_devtoken, evervim will initialize on start VIM.
+and set g:evervim_devtoken, evervim will initialize on VIM start up.
 
 vimrc example:
     let g:evervim_devtoken='S=s999:U=9ee99c9:E=999d9999c99:C=99a99a99999:P=9cd:A=en-devtoken:H=cd99999de9999c99b999d99d999cb9f9'
